@@ -1,0 +1,233 @@
+@import '~themes/default.less';
+@import '~themes/mixin.less';
+
+@light-1: fade(@light, 10%);
+@light-2: fade(@light, 20%);
+@light-3: fade(@light, 30%);
+@light-4: fade(@light, 40%);
+@light-5: fade(@light, 50%);
+@light-6: fade(@light, 60%);
+@light-7: fade(@light, 70%);
+@light-8: fade(@light, 80%);
+@light-9: fade(@light, 90%);
+
+@gray-1: #ffffff;
+@gray-2: #fafafa;
+@gray-3: #f5f5f5;
+@gray-4: #f0f0f0;
+@gray-5: #d9d9d9;
+@gray-6: #bfbfbf;
+@gray-7: #8c8c8c;
+@gray-8: #595959;
+@gray-9: #434343;
+@gray-10: #262626;
+@gray-11: #1f1f1f;
+@gray-12: #141414;
+@gray-13: #000000;
+
+@green-6: #03dc03;
+
+// @purple-1: #9c9ce2;
+// @purple-2: #9e9de4;
+// @purple-3: #a6a6ed;
+// @purple-4: #d2d3f9;
+// @purple-5: #ecedfe;
+// @purple-6: #eeeffe;
+// @purple-7: #eff0ff;
+
+@lightBlue-1: #34cef4;
+@lightBlue-2: #34d0f6;
+@lightBlue-3: #39daff;
+@lightBlue-4: #5de6ff;
+@lightBlue-5: #86f0ff;
+@lightBlue-6: #aff8ff;
+@lightBlue-7: #d8fcff;
+@lightBlue-8: #8ed5fe;
+
+@yellow-1: #f1cd2b;
+@yellow-2: #f3cf2c;
+@yellow-3: #fcd930;
+@yellow-4: #ffe755;
+@yellow-5: #fff27e;
+@yellow-6: #fff8a7;
+@yellow-7: #fffdd1;
+
+@mintGreen-1: #8ff48f;
+@mintGreen-2: #90f691;
+@mintGreen-3: #98ff98;
+@mintGreen-4: #c0ffbe;
+@mintGreen-5: #e8ffe7;
+@mintGreen-6: #eeffed;
+@mintGreen-7: #f0ffee;
+
+@lightPink-1: #f48bb2;
+@lightPink-2: #f68cb3;
+@lightPink-3: #ff94bb;
+@lightPink-4: #ffb9d1;
+@lightPink-5: #ffe2eb;
+@lightPink-6: #ffedf2;
+@lightPink-7: #ffeef2;
+
+// Dust Red
+@red-1: #2a1215;
+@red-2: #431418;
+@red-3: #58181c;
+@red-4: #791a1f;
+@red-5: #a61d24;
+@red-6: #d32029;
+@red-7: #e84749;
+@red-8: #f37370;
+@red-9: #f89f9a;
+@red-10: #fac8c3;
+
+// Volcano
+@volcano-1: #2b1611;
+@volcano-2: #441d12;
+@volcano-3: #592716;
+@volcano-4: #7c3118;
+@volcano-5: #aa3e19;
+@volcano-6: #d84a1b;
+@volcano-7: #e87040;
+@volcano-8: #f3956a;
+@volcano-9: #f8b692;
+@volcano-10: #fad4bc;
+
+// Sunset Orange
+@orange-1: #2b1d11;
+@orange-2: #442a11;
+@orange-3: #593815;
+@orange-4: #7c4a15;
+@orange-5: #aa6215;
+@orange-6: #d87a16;
+@orange-7: #e89a3c;
+@orange-8: #f3b765;
+@orange-9: #f8cf8d;
+@orange-10: #fae3b7;
+
+// Calendula Gold
+@gold-1: #2b2111;
+@gold-2: #443111;
+@gold-3: #594214;
+@gold-4: #7c5914;
+@gold-5: #aa7714;
+@gold-6: #d89614;
+@gold-7: #e8b339;
+@gold-8: #f3cc62;
+@gold-9: #f8df8b;
+@gold-10: #faedb5;
+// Sunrise Yellow
+@yellow-1: #2b2611;
+@yellow-2: #443b11;
+@yellow-3: #595014;
+@yellow-4: #7c6e14;
+@yellow-5: #aa9514;
+@yellow-6: #d8bd14;
+@yellow-7: #e8d639;
+@yellow-8: #f3ea62;
+@yellow-9: #f8f48b;
+@yellow-10: #fafab5;
+// Lime
+@lime-1: #1f2611;
+@lime-2: #2e3c10;
+@lime-3: #3e4f13;
+@lime-4: #536d13;
+@lime-5: #6f9412;
+@lime-6: #8bbb11;
+@lime-7: #a9d134;
+@lime-8: #c9e75d;
+@lime-9: #e4f88b;
+@lime-10: #f0fab5;
+
+// Polar Green
+@green-1: #162312;
+@green-2: #1d3712;
+@green-3: #274916;
+@green-4: #306317;
+@green-5: #3c8618;
+@green-6: #49aa19;
+@green-7: #6abe39;
+@green-8: #8fd460;
+@green-9: #b2e58b;
+@green-10: #d5f2bb;
+
+// Cyan
+@cyan-1: #112123;
+@cyan-2: #113536;
+@cyan-3: #144848;
+@cyan-4: #146262;
+@cyan-5: #138585;
+@cyan-6: #13a8a8;
+@cyan-7: #33bcb7;
+@cyan-8: #58d1c9;
+@cyan-9: #84e2d8;
+@cyan-10: #b2f1e8;
+
+// Daybreak Blue
+@blue-1: #111d2c;
+@blue-2: #112a45;
+@blue-3: #15395b;
+@blue-4: #164c7e;
+@blue-5: #1765ad;
+@blue-6: #177ddc;
+@blue-7: #3c9ae8;
+@blue-8: #65b7f3;
+@blue-9: #8dcff8;
+@blue-10: #b7e3fa;
+
+// Geek Blue
+@geekblue-1: #131629;
+@geekblue-2: #161d40;
+@geekblue-3: #1c2755;
+@geekblue-4: #203175;
+@geekblue-5: #263ea0;
+@geekblue-6: #2b4acb;
+@geekblue-7: #5273e0;
+@geekblue-8: #7f9ef3;
+@geekblue-9: #a8c1f8;
+@geekblue-10: #d2e0fa;
+
+// Golden Purple
+
+@purple-1: #1a1325;
+@purple-2: #24163a;
+@purple-3: #301c4d;
+@purple-4: #3e2069;
+@purple-5: #51258f;
+@purple-6: #642ab5;
+@purple-7: #854eca;
+@purple-8: #ab7ae0;
+@purple-9: #cda8f0;
+@purple-10: #ebd7fa;
+
+// Magenta
+
+@magenta-1: #291321;
+@magenta-2: #40162f;
+@magenta-3: #551c3b;
+@magenta-4: #75204f;
+@magenta-5: #a02669;
+@magenta-6: #cb2b83;
+@magenta-7: #e0529c;
+@magenta-8: #f37fb7;
+@magenta-9: #f8a8cc;
+@magenta-10: #fad2e3;
+
+@dark-1: fade(@dark, 10%);
+@dark-2: fade(@dark, 20%);
+@dark-3: fade(@dark, 30%);
+@dark-4: fade(@dark, 40%);
+@dark-5: fade(@dark, 50%);
+@dark-6: fade(@dark, 60%);
+@dark-7: fade(@dark, 70%);
+@dark-8: fade(@dark, 80%);
+@dark-9: fade(@dark, 90%);
+
+@primary-color-1: fade(@primary-color, 10%);
+@primary-color-2: fade(@primary-color, 20%);
+@primary-color-3: fade(@primary-color, 30%);
+@primary-color-4: fade(@primary-color, 40%);
+@primary-color-5: fade(@primary-color, 50%);
+@primary-color-6: fade(@primary-color, 60%);
+@primary-color-7: fade(@primary-color, 70%);
+@primary-color-8: fade(@primary-color, 80%);
+@primary-color-9: fade(@primary-color, 90%);

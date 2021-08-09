@@ -1,0 +1,261 @@
+@import '~themes/vars.less';
+
+@sider-background: darken(@primary-color, 3%);
+@menu-item-text: darken(@light, 25%);
+
+:global {
+  .ant-layout-sider-light {
+    // background: #fafafa;
+    background-color: @primary-color;
+    // color: red;
+  }
+
+  .ant-layout-sider {
+    background-color: @sider-background;
+  }
+}
+
+.menuStyle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.sider {
+  box-shadow: fade(@primary-color, 10%) 0 0 28px 0;
+  z-index: 10;
+  :global {
+    .ant-layout-sider-children {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+}
+
+.userName {
+  :global {
+    .ant-btn {
+      height: 15px;
+    }
+    .ant-dropdown-link {
+      color: #fff;
+    }
+  }
+}
+
+.brand {
+  z-index: 1;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2);
+  background: transparent;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 36px;
+      margin-right: 8px;
+    }
+
+    h1 {
+      vertical-align: text-bottom;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 700;
+      color: @primary-color;
+      white-space: nowrap;
+      margin-bottom: 0;
+      .text-gradient();
+
+      :local {
+        animation: fadeRightIn 300ms @ease-in-out;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+.menuContainer {
+  width: 100%;
+  overflow-x: hidden;
+  height: 50%;
+  flex: 1;
+  font-family: Helvetica Neue Medium;
+  overflow: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    // display: none;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      // background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  :global {
+    .ant-menu-item > a,
+    .ant-menu-submenu-title {
+      color: @menu-item-text;
+    }
+
+    .ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+    .ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow::after {
+      background: @menu-item-text;
+    }
+
+    .ant-menu-dark {
+      background: @sider-background;
+    }
+
+    .ant-menu-inline.ant-menu-sub {
+      background: @dark-1;
+      box-shadow: 2px 0 2px rgba(0, 0, 0, 0.3) inset;
+    }
+  }
+}
+
+.profile {
+  padding: 10px;
+  margin: 0 0 0 17px;
+  color: @white;
+}
+
+.profileLight {
+  padding: 10px;
+  margin: 0 0 0 17px;
+  color: @light;
+  // background-color: #fafafa;
+}
+
+.menuContainerLight {
+  width: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+  flex: 1;
+  font-family: Helvetica Neue Medium;
+  background-color: @primary-color;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  :global {
+    .ant-menu-inline {
+      border-right: none;
+      background: transparent;
+    }
+    .ant-menu-item > a {
+      display: block;
+      color: @light;
+    }
+
+    .ant-menu-light {
+      background-color: @primary-color;
+    }
+
+    .ant-menu-item,
+    .anticon > span,
+    .ant-menu-submenu-title,
+    .anticon > span {
+      color: @light;
+    }
+  }
+}
+
+.switchThemeLabel {
+  white-space: nowrap;
+  overflow: hidden;
+  color: @white;
+}
+
+.switchTheme {
+  // position: absolute;
+
+  width: 100%;
+  // height: 48px;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    // color: @layout-footer-background;
+    // filter: invert(100%);
+  }
+  :global {
+    .anticon {
+      min-width: 14px;
+      margin-right: 4px;
+      font-size: 14px;
+    }
+    .ant-switch,
+    .ant-switch-checked {
+      // border: 1px solid @gray-5;
+      background-color: @primary-color-9;
+    }
+  }
+}
+
+.switchThemeLight {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  color: @dark;
+  :global {
+    .anticon {
+      min-width: 14px;
+      margin-right: 4px;
+      font-size: 14px;
+    }
+    .ant-switch,
+    .ant-switch-checked {
+      // border: 1px solid @primary-color;
+      background-color: @dark-4;
+    }
+  }
+}
+
+@keyframes fadeLeftIn {
+  0% {
+    transform: translateX(5px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

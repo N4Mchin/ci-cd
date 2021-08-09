@@ -1,0 +1,6 @@
+{
+  "name": "MessageModal",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./MessageModal.js"
+}

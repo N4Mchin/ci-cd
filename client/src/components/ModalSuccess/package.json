@@ -1,0 +1,6 @@
+{
+  "name": "ModalSuccess",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./ModalSuccess.js"
+}

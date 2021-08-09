@@ -1,0 +1,6 @@
+{
+  "name": "LabReport",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LabReport.js"
+}

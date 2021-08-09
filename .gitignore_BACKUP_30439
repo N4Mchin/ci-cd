@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+client/package-lock.json
+client/package.json
+client/src/pages/.umi/
+client/node_modules/
+backend/node_modules/
+=======
+backend/node_modules/
+client/node_modules/
+client/src/pages/.umi/router.js
+>>>>>>> 2d1dd259e74827872649dc7146a45302a6cf1ee3

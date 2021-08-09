@@ -1,0 +1,17 @@
+@import '~themes/vars.less';
+
+.contentInner {
+  background: #fff;
+  padding: 24px;
+  margin: 10px 0px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); // major shadow for layers
+  border-radius: 4px; // major border radius
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .contentInner {
+    padding: 0px;
+    min-height: ~'calc(100vh - 160px)';
+  }
+}

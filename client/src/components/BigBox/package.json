@@ -1,0 +1,6 @@
+{
+    "name": "BigBox",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./BigBox.js"
+}

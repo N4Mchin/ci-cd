@@ -1,0 +1,6 @@
+{
+  "name": "OrganizationPicker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OrganizationPicker.js"
+}

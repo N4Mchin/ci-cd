@@ -1,0 +1,178 @@
+@import '~themes/vars';
+
+.form {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000014;
+  padding: 40px;
+  border-radius: 4px;
+
+  p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.passwordSent {
+  font: Medium 24px/29px Helvetica Neue;
+  font-size: 24px;
+  letter-spacing: 0;
+  color: #7e8796;
+  opacity: 1;
+}
+
+.signInButton {
+  background: #f44336 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 4px;
+}
+
+.signInButton:hover {
+  background: #f45f36 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.signInButton:focus {
+  background: #f45f36 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.formContainer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 396px;
+  height: 496px;
+  // box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+
+  // opacity: 1;
+}
+
+.logo {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    color: @primary-color;
+    .text-gradient();
+  }
+}
+
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.loginBackgroundImage {
+  opacity: 1;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* slightly transparent fallback */
+.bgContainer {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+.slogan {
+  background-image: url(../../../../public/slogan-caligraphy.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sloganContainer {
+  // border: 1px solid red;
+  position: relative;
+  width: 100%;
+  height: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backgroundImage {
+  background-image: url(../../../../public/hands-patient-doctor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  opacity: 0.15;
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports (
+  (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+) {
+  .backgroundImage {
+    background-image: url(../../../../public/hands-patient-doctor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+  }
+}
+
+.loginScreen {
+  // border: 1px solid black;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #b2dfdb80 no-repeat padding-box;
+}
+
+.text {
+  text-align: left;
+  font-size: 16px;
+  font-family: Helvetica Neue Light;
+  letter-spacing: 0;
+  color: #7e8796;
+}

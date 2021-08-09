@@ -1,0 +1,160 @@
+@import '../../../themes/default.less';
+
+.containerStatBox {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.statBox {
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  width: 15%;
+  margin: 8px 0px;
+  padding: 8px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  .statBoxLabel {
+    font-size: 12px;
+    width: 80%;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .statBoxDetail {
+    font-size: 40px;
+    font-family: Helvetica Neue Bold;
+    color: #616161;
+  }
+}
+
+.statBigBox {
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  width: 24%;
+  // height: 100%;
+  margin: 8px 0px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .statBigBoxLabel {
+    font-size: 12px;
+    width: 70%;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .statBigBoxDetail {
+    font-size: 40px;
+    text-align: end;
+    width: 30%;
+    font-family: Helvetica Neue Bold;
+    color: #616161;
+  }
+}
+
+.eee {
+  color: #98ff98;
+}
+.registered {
+  background: #e3e3e3;
+}
+.active {
+  background: #faad14;
+  //background: #87d4cc;
+}
+.on-hold {
+  background: #fcd930;
+}
+.revoked {
+  background: #8ed5fe;
+  // background: #1890ff;
+}
+.completed {
+  background: #98ff98;
+  // background: #52c41a;
+}
+.cito {
+  background: #db1b44;
+  // background: #f5222d;
+}
+.unknown {
+  background: #e3e3e3;
+}
+.research {
+  background: #cbcafd;
+}
+
+.resultNotAvailable {
+  // background: @result-not-available;
+}
+.resultEntered {
+  background: #fcd930;
+}
+
+.resultVerified {
+  background: #98ff98;
+}
+
+.colors {
+  background: #f5222d;
+  background: #faad14;
+  background: #1890ff;
+  background: #52c41a;
+}
+
+.mainTitle {
+  padding: 8px 0px;
+  background: white;
+  border: 1px solid white;
+  height: 47px;
+  margin-top: 16px;
+  display: inline-block;
+}
+.modulDetail {
+  font-size: 12px;
+  color: #616161;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.testItemBox {
+  // width: 168px;
+  height: 90px;
+  border-radius: 12px;
+  color: #888888;
+  font-family: Helvetica Neue Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+.testItemBox:hover,
+.testItemBox:focus {
+  color: white;
+  background-color: @primary-color;
+}
+
+.orange-background {
+  background: #f44336;
+}
+
+.gray-background {
+  background: #555;
+}
+
+.tabsContainer {
+  :global {
+    .ant-tabs-tabpane .ant-tabs-tabpane-active {
+      padding: 0;
+    }
+  }
+}

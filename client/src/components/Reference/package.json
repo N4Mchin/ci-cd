@@ -1,0 +1,6 @@
+{
+  "name": "Reference",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./ReferenceInput.js"
+}

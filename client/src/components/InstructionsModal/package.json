@@ -1,0 +1,6 @@
+{
+  "name": "InstructionsModal",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./InstructionsModal.js"
+}

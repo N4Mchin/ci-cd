@@ -1,0 +1,39 @@
+.title {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #616161;
+  text-transform: uppercase;
+}
+
+.divider {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.compactForm {
+  :global {
+    .ant-form-item-control {
+      line-height: 20px;
+    }
+  }
+}
+.menu {
+  :global {
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: #e1f0ec;
+    }
+  }
+}
+.itemLabel {
+  :global {
+    .ant-form-item-label {
+      overflow: unset;
+      line-height: normal;
+      white-space: unset;
+      padding: 6px 4px;
+    }
+    .ant-form-item-label > label::after {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.serviceSets {
+  height: 100%;
+
+  :global {
+    .ant-collapse {
+      height: 100%;
+    }
+    .ant-collapse-item {
+      height: auto;
+    }
+    .ant-collapse-item-active {
+      height: 100%;
+    }
+  }
+
+  .serviceSetsContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    // height: flex-grow;
+
+    .serviceSetsItem {
+      width: 50%;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Deceased",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Deceased.js"
+}

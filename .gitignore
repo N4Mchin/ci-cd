@@ -1,0 +1,13 @@
+client/node_modules/
+client/src/pages/.umi/
+client/src/pages/.umi-production/
+client/dist/
+client/src/locales/_build/
+client/src/utils/config.js
+client/package-lock.json
+backend/node_modules/
+backend/config/index.js
+backend/laboratory-reports/
+backend/excel-documents/
+backend/package-lock.json
+.vscode/settings.json

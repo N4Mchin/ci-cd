@@ -1,0 +1,6 @@
+{
+    "name": "Communication",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Communication.js"
+}

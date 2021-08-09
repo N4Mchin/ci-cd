@@ -1,0 +1,6 @@
+{
+    "name": "Relationship",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Relationship.js"
+}

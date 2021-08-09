@@ -1,0 +1,6 @@
+{
+  "name": "SearchInputDrugInfoFromHealthInsurance",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SearchInputDrugInfoFromHealthInsurance.js"
+}

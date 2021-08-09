@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"id":{"$numberInt":"1"}},"name":"id_1","background":true},{"v":{"$numberInt":"2"},"key":{"_createdAt":{"$numberInt":"1"}},"name":"_createdAt_1","background":true}],"uuid":"6eb8f3cff2044fc6942a9ba64378906f","collectionName":"drugInfo"}

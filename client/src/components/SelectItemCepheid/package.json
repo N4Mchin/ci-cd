@@ -1,0 +1,6 @@
+{
+  "name": "SelectItemCepheid",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SelectItemCepheid.js"
+}

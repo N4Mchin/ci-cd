@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://hl7.org/fhir/json-schema/4.0",
+  "description": "see http://hl7.org/fhir/json.html#schema for information about the FHIR Json Schemas",
+  "definitions": {
+    
+    "id": {
+      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+      "type": "string",
+      "description": "Any combination of letters, numerals, \"-\" and \".\", with a length limit of 64 characters.  (This might be an integer, an unprefixed OID, UUID or any other identifier pattern that meets these constraints.)  Ids are case-insensitive."
+    },
+
+    "Patient": {
+
+      "description": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+      
+      "properties": {
+      
+        "resourceType": {
+          "description": "This is a Patient resource",
+          "const": "Patient"
+        },
+      
+        "id": {
+      
+          "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      
+          "$ref": "#/definitions/id"
+      
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import '~themes/vars.less';
+
+.header {
+  padding: 0;
+  box-shadow: @shadow-2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  z-index: 9;
+  align-items: center;
+  background-color: #fcfcfc;
+  box-shadow: @shadow-1;
+  border-bottom: 1px solid @gray-3;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: ~'calc(100% - 256px)';
+    z-index: 9;
+    transition: width 0.2s;
+    display: flex;
+
+    &.collapsed {
+      width: ~'calc(100% - 80px)';
+    }
+  }
+
+  :global {
+    .ant-menu-submenu-title {
+      height: 72px;
+    }
+
+    .ant-menu-horizontal {
+      line-height: 72px;
+
+      & > .ant-menu-submenu:hover {
+        color: @primary-color;
+        background-color: @hover-color;
+      }
+    }
+
+    .ant-menu {
+      border-bottom: none;
+      height: 72px;
+    }
+
+    .ant-menu-horizontal > .ant-menu-submenu {
+      top: 0;
+      margin-top: 0;
+    }
+
+    .ant-menu-horizontal > .ant-menu-item,
+    .ant-menu-horizontal > .ant-menu-submenu {
+      border-bottom: none;
+    }
+
+    .ant-menu-horizontal > .ant-menu-item-active,
+    .ant-menu-horizontal > .ant-menu-item-open,
+    .ant-menu-horizontal > .ant-menu-item-selected,
+    .ant-menu-horizontal > .ant-menu-item:hover,
+    .ant-menu-horizontal > .ant-menu-submenu-active,
+    .ant-menu-horizontal > .ant-menu-submenu-open,
+    .ant-menu-horizontal > .ant-menu-submenu-selected,
+    .ant-menu-horizontal > .ant-menu-submenu:hover {
+      border-bottom: none;
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .leftContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .fold {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    cursor: pointer;
+    transition: @transition-ease-in;
+
+    &:hover {
+      color: @primary-color;
+      background-color: @hover-color;
+    }
+  }
+
+  .button {
+    width: 72px;
+    height: 32px;
+    margin: 16px;
+    border-radius: 4px;
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  .buttonSearch {
+    width: 72px;
+    height: 32px;
+    margin: 16px;
+    border-radius: 4px;
+    opacity: 1;
+    // background: #004d40 0% 0% no-repeat padding-box;
+    // border-color: #004d40;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  .searchField {
+    width: 324px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 100% !important;
+  }
+}

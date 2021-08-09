@@ -1,0 +1,6 @@
+{
+    "name": "QuestionnaireConditionNotes",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./QuestionnaireConditionNotes.js"
+}

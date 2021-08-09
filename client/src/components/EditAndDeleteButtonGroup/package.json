@@ -1,0 +1,6 @@
+{
+    "name": "edit_and_delete_button_group",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./EditAndDeleteButtonGroup.js"
+}

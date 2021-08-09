@@ -1,0 +1,112 @@
+.myAccount {
+  display: flex;
+  align-content: stretch;
+  margin-top: 8px;
+
+  .settings {
+    padding: 8px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .form {
+      flex-grow: 1;
+      display: flex;
+      flex-flow: row wrap;
+
+      :global {
+        .antd-form-item-label {
+          padding: 0px;
+          background: #616161;
+        }
+      }
+    }
+
+    .formItem {
+      flex-grow: 1;
+      background: #c9c9c9;
+      margin: 8px;
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .editButton {
+      border: 0px;
+      color: #f44336;
+      margin: 0px;
+      background: transparent;
+    }
+  }
+
+  .avatarContainer {
+    width: 180px;
+    padding: 8px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.saveButton {
+  background: #f44336 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 4px;
+}
+
+.saveButton:hover {
+  background: #f45f36 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.saveButton:focus {
+  background: #f45f36 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.cancelButton {
+  background: #c9c9c9 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 4px;
+}
+
+.cancelButton:hover {
+  background: #cfcfcf 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.cancelButton:focus {
+  background: #cfcfcf 0% 0% no-repeat padding-box;
+  // opacity: 0.9;
+  border-radius: 4px;
+  border: none;
+}
+
+.avatarUploader {
+  :global {
+    .ant-upload {
+      width: 162px;
+      height: 162px;
+    }
+  }
+}
+
+.datePicker {
+  width: 150px;
+  :global {
+    .ant-select-selection-selected-value {
+      margin: 0 14px 0 11px;
+    }
+  }
+}

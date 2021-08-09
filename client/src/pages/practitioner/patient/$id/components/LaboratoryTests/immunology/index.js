@@ -1,0 +1,100 @@
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
+import { Form, Button, Row } from 'antd'
+import { withI18n, Trans } from '@lingui/react'
+import { connect } from 'dva'
+import ViewSection from './ViewSection'
+import FormModal from './FormModal'
+
+const Immunology = props => {
+  const { ImmunologyTests } = props.app.FHIR_CODES
+
+  const [formModalVisible, setFormModalVisible] = useState(false)
+  const [fetchingData, setFetchingData] = useState(false)
+  const [dataSource, setDataSource] = useState([])
+
+  async function refresh() {
+    setFetchingData(true)
+    return props
+      .dispatch({
+        type: 'app/queryLaboratoryTestLevel2',
+        payload: {
+          testKey: 'ImmunologyTests',
+          testCode: ImmunologyTests,
+        },
+      })
+      .then(result => {
+        if (!!result) {
+          setDataSource(result)
+        } else {
+          setDataSource([])
+        }
+      })
+      .catch(errorInfo => console.log(errorInfo))
+      .finally(() => {
+        setFetchingData(false)
+      })
+  }
+
+  useEffect(() => {
+    refresh()
+  }, [])
+
+  const handleSubmit = () => {
+    setFormModalVisible(false)
+    refresh()
+    return props.dispatch({
+      type: 'practitioner_patient_profile/showModalMessage',
+      payload: {
+        type: 'success',
+        content: props.i18n.t`Save successful`,
+      },
+    })
+  }
+
+  const handleError = errorInfo => {
+    return props.dispatch({
+      type: 'practitioner_patient_profile/showModalMessage',
+      payload: {
+        type: 'error',
+        content: props.i18n.t`Save failed`,
+      },
+    })
+  }
+  return (
+    <div>
+      <Row type="flex" justify="end" style={{ marginBottom: '16px' }}>
+        <Button
+          onClick={() => setFormModalVisible(true)}
+          className="button-red uppercase"
+        >
+          <Trans id="Result Entry" />
+        </Button>
+      </Row>
+
+      {formModalVisible && (
+        <FormModal
+          visible={formModalVisible}
+          onCancel={() => setFormModalVisible(false)}
+          onSubmit={handleSubmit}
+          onError={handleError}
+        />
+      )}
+
+      <ViewSection dataSource={dataSource} loading={fetchingData} />
+    </div>
+  )
+}
+
+Immunology.propTypes = {
+  practitioner_patient_profile: PropTypes.object,
+  location: PropTypes.object,
+  dispatch: PropTypes.func,
+  loading: PropTypes.object,
+}
+
+export default connect(({ app, practitioner_patient_profile, loading }) => ({
+  app,
+  practitioner_patient_profile,
+  loading,
+}))(withI18n()(Form.create()(Immunology)))

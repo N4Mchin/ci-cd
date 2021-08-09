@@ -1,0 +1,6 @@
+{
+    "name": "AddressPanel",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./AddressPanel.js"
+}

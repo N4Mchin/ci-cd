@@ -1,0 +1,6 @@
+{
+  "name": "Dummy",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Dummy.js"
+}

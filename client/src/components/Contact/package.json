@@ -1,0 +1,6 @@
+{
+    "name": "ContactPanel",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./ContactPanel.js"
+}

@@ -1,0 +1,81 @@
+.containerStatBox {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.statBox {
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  width: 15%;
+  margin: 8px 0px;
+  padding: 8px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  .statBoxLabel {
+    font-size: 16px;
+    width: 80%;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .statBoxDetail {
+    font-size: 40px;
+    font-family: Helvetica Neue Bold;
+    color: #616161;
+  }
+}
+
+.statBigBox {
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  width: 32%;
+  // height: 100%;
+  margin: 8px 0px;
+  padding: 8px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  .statBigBoxLabel {
+    font-size: 16px;
+    width: 50%;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .statBigBoxDetail {
+    font-size: 40px;
+    font-family: Helvetica Neue Bold;
+    color: #616161;
+  }
+}
+
+.chart {
+  padding: 8px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+
+  .chartTopBar {
+    margin: 16px 50px 16px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .chartTitle {
+      font-size: 14px;
+    }
+  }
+}
+
+.datePicker {
+  width: 150px;
+  :global {
+    .ant-select-selection-selected-value {
+      margin: 0 14px 0 11px;
+    }
+  }
+}
